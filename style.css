@@ -102,3 +102,68 @@ ul li a {
 ul li a:hover {
   color: var(--primary-blue);
 }
+
+.hero-parent-root {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+.hero-banner-container {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-parent h2 {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.hero-parent h2 em {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.hero-parent p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 36px auto;
+  color: #cbd5e1;
+}
+
+.hero-btn-parent .common-btn {
+  padding: 14px 36px;
+  font-size: 16px;
+}
+
