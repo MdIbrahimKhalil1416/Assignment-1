@@ -238,3 +238,129 @@ ul li a:hover {
   font-size: 14px;
 }
 
+.pricing-parent {
+  padding: 40px 20px 80px 20px;
+  text-align: center;
+}
+
+.pricing-parent h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.pricing-subtitle {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 48px;
+}
+
+.pricing-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.pricing-card {
+  background: #fafafa;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  padding: 40px 32px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card.highlighted {
+  background: var(--dark-navy);
+  color: #ffffff;
+  border-color: var(--dark-navy);
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(11, 25, 46, 0.15);
+}
+
+.tier-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.highlighted .tier-name {
+  color: #94a3b8;
+}
+
+.price {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+.highlighted .price {
+  color: #ffffff;
+}
+
+.per-person {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.highlighted .per-person {
+  color: #94a3b8;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.divider.opacity-light {
+  border-top: 1px solid #1e293b;
+}
+
+.pricing-card ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  list-style: none;
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.pricing-card ul li {
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 16px;
+}
+
+.pricing-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #94a3b8;
+}
+
+.highlighted ul li {
+  color: #cbd5e1;
+}
+
+.highlighted ul li::before {
+  color: #475569;
+}
+
+.fill-blue {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+}
+
